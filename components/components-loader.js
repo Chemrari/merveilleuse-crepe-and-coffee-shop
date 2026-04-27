@@ -18,7 +18,9 @@
       return Promise.resolve();
     }
 
-    return fetch(target.path)
+    var componentUrl = new URL(target.path, window.location.href);
+
+    return fetch(componentUrl.toString())
       .then(function (response) {
         if (!response.ok) {
           throw new Error("Cannot load " + target.path);
@@ -51,7 +53,6 @@
 
       link.classList.toggle("text-stone-600", !isActive);
       link.classList.toggle("hover:text-stone-900", !isActive);
-      link.classList.toggle("font-semibold", !isActive);
     });
   }
 
@@ -104,9 +105,9 @@
     if (!header) return;
 
     var page = window.location.pathname.split("/").pop().toLowerCase();
-    var isAccueil = page === "index.html" || page === "";
+    var isHome = page === "index.html" || page === "";
 
-    if (isAccueil) {
+    if (isHome) {
       header.classList.remove("bg-white", "shadow-sm", "border-stone-200");
       header.classList.add("bg-transparent", "border-transparent", "transition-all", "duration-500");
 
