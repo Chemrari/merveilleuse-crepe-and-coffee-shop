@@ -1,0 +1,276 @@
+<!-- Section: Full Menu (Text Lists) -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-24">
+    <!-- French Crepes -->
+    <div>
+        <div class="flex items-center gap-4 mb-8">
+            <h2 class="font-headline-lg text-headline-lg text-on-background whitespace-nowrap">French Crepes</h2>
+            <div class="h-px bg-outline-variant w-full"></div>
+        </div>
+        <div class="space-y-4">
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Golden Classic</h4>
+                <span class="font-headline-md text-on-background">$10.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Nutty Banana</h4>
+                <span class="font-headline-md text-on-background">$12.49</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Nutella Fraise</h4>
+                <span class="font-headline-md text-on-background">$12.49</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Fruitella</h4>
+                <span class="font-headline-md text-on-background">$12.49</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Strawberry And Cream</h4>
+                <span class="font-headline-md text-on-background">$12.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Lotus crepe</h4>
+                <span class="font-headline-md text-on-background">$12.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Pistache Royale</h4>
+                <span class="font-headline-md text-on-background">$15.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Triple Chocolate</h4>
+                <span class="font-headline-md text-on-background">$12.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Oreo Crepe</h4>
+                <span class="font-headline-md text-on-background">$12.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Crepe Ferrero</h4>
+                <span class="font-headline-md text-on-background">$13.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Le Délice Bueno</h4>
+                <span class="font-headline-md text-on-background">$13.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Merveilleuse Bowl Crepe</h4>
+                <span class="font-headline-md text-on-background">$14.50</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Creme brulee crepe</h4>
+                <span class="font-headline-md text-on-background">$14.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Dulce de Leche crepe</h4>
+                <span class="font-headline-md text-on-background">$12.99</span>
+            </div>
+        </div>
+        <div class="mt-8 p-4 bg-surface-container-low rounded-lg border border-stone-200">
+            <p class="font-label-sm text-secondary mb-2 uppercase tracking-wider text-xs">Toppings</p>
+            <p class="font-body-md text-on-surface-variant text-sm">Banana, Strawberry, Blueberry, Lotus Crumbs, Oreo Crumbs, Mixed Nuts, Rainbow Sprinkles, Pistachio Crumbs, Sliced Almonds, Pecan</p>
+            <div class="h-px bg-outline-variant/30 w-full my-3"></div>
+            <p class="font-label-sm text-secondary mb-2 uppercase tracking-wider text-xs">Sauces</p>
+            <p class="font-body-md text-on-surface-variant text-sm">Milk Chocolate, White Chocolate, Dark Chocolate, Caramel, Nutella, Biscoff, Pistachio, Fudge, Strawberry Sauce, Salted Caramel, Condensed Milk</p>
+        </div>
+    </div>
+    
+    <!-- Belgian Waffles -->
+    <div>
+        <div class="flex items-center gap-4 mb-8">
+            <h2 class="font-headline-lg text-headline-lg text-on-background whitespace-nowrap">Belgian Waffles</h2>
+            <div class="h-px bg-outline-variant w-full"></div>
+        </div>
+        <div class="space-y-4">
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Just a waffle</h4>
+                <span class="font-headline-md text-on-background">$10.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Lotus waffle</h4>
+                <span class="font-headline-md text-on-background">$12.49</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Tripple chocolate waffle</h4>
+                <span class="font-headline-md text-on-background">$12.49</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Mixed nuts waffle</h4>
+                <span class="font-headline-md text-on-background">$12.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Dark desire waffle</h4>
+                <span class="font-headline-md text-on-background">$13.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Sugar kiss waffle</h4>
+                <span class="font-headline-md text-on-background">$12.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Reese's waffle</h4>
+                <span class="font-headline-md text-on-background">$12.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Berry Heaven Waffle</h4>
+                <span class="font-headline-md text-on-background">$13.50</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pastries -->
+    <div>
+        <div class="flex items-center gap-4 mb-8">
+            <h2 class="font-headline-lg text-headline-lg text-on-background whitespace-nowrap">Pastries</h2>
+            <div class="h-px bg-outline-variant w-full"></div>
+        </div>
+        <div class="space-y-4">
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Creme brulee</h4>
+                <span class="font-headline-md text-on-background">$4.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Macarons</h4>
+                <span class="font-headline-md text-on-background">$2.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Tiramisu</h4>
+                <span class="font-headline-md text-on-background">$5.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Tart</h4>
+                <span class="font-headline-md text-on-background">$5.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Cheese Cake</h4>
+                <span class="font-headline-md text-on-background">$7.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Strawberry Chocolate Cup</h4>
+                <span class="font-headline-md text-on-background">$15.99</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section: Specialty Coffee & Drinks -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <!-- Coffee -->
+    <div>
+        <div class="flex items-center gap-4 mb-8">
+            <h2 class="font-headline-lg text-headline-lg text-on-background whitespace-nowrap">Coffee</h2>
+            <div class="h-px bg-outline-variant w-full"></div>
+        </div>
+        <div class="space-y-4">
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Latte</h4>
+                <span class="font-headline-md text-on-background">$5.49</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Cappuccino</h4>
+                <span class="font-headline-md text-on-background">$5.49</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Mocha</h4>
+                <span class="font-headline-md text-on-background">$5.75</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Frappuccino</h4>
+                <span class="font-headline-md text-on-background">$5.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Dolce cinnamon latte</h4>
+                <span class="font-headline-md text-on-background">$5.75</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Spanish latte</h4>
+                <span class="font-headline-md text-on-background">$5.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Pistachio spanish latte</h4>
+                <span class="font-headline-md text-on-background">$6.25</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Toasted Marshmallow Latte</h4>
+                <span class="font-headline-md text-on-background">$5.49</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Hot Chocolate</h4>
+                <span class="font-headline-md text-on-background">$5.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Americano</h4>
+                <span class="font-headline-md text-on-background">$4.49</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Double espresso</h4>
+                <span class="font-headline-md text-on-background">$2.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Single espresso</h4>
+                <span class="font-headline-md text-on-background">$1.99</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tea -->
+    <div>
+        <div class="flex items-center gap-4 mb-8">
+            <h2 class="font-headline-lg text-headline-lg text-on-background whitespace-nowrap">Tea</h2>
+            <div class="h-px bg-outline-variant w-full"></div>
+        </div>
+        <div class="space-y-4">
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Black Tea</h4>
+                <span class="font-headline-md text-on-background">$4.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Green Tea</h4>
+                <span class="font-headline-md text-on-background">$4.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Raspberry Tea</h4>
+                <span class="font-headline-md text-on-background">$4.99</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cold Drinks -->
+    <div>
+        <div class="flex items-center gap-4 mb-8">
+            <h2 class="font-headline-lg text-headline-lg text-on-background whitespace-nowrap">Cold Drinks</h2>
+            <div class="h-px bg-outline-variant w-full"></div>
+        </div>
+        <div class="space-y-4">
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">HAWAII</h4>
+                <span class="font-headline-md text-on-background">$5.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Iced Strawberry Refresher</h4>
+                <span class="font-headline-md text-on-background">$5.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Iced Mango Paradise</h4>
+                <span class="font-headline-md text-on-background">$5.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Lemon Berry Splash</h4>
+                <span class="font-headline-md text-on-background">$5.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Cherry Limeade</h4>
+                <span class="font-headline-md text-on-background">$5.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Green Apple Cooler</h4>
+                <span class="font-headline-md text-on-background">$5.99</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
+                <h4 class="font-headline-md text-base">Frozen Lemonade</h4>
+                <span class="font-headline-md text-on-background">$5.99</span>
+            </div>
+        </div>
+        <div class="mt-8 p-4 bg-surface-container-low rounded-lg border border-stone-200">
+            <p class="font-label-sm text-secondary mb-2 uppercase tracking-wider text-xs">Flavors</p>
+            <p class="font-body-md text-on-surface-variant text-sm">Vanilla, Caramel, Hazelnut, Salted Caramel</p>
+        </div>
+    </div>
+</section>

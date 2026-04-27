@@ -1,0 +1,30 @@
+<header class="bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-stone-200 dark:border-stone-800 shadow-sm">
+  <div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+    <a class="text-2xl font-bold tracking-tight text-red-700 dark:text-red-500 font-serif" href="accueil.html">Merveilleuse</a>
+    
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center space-x-8">
+      <a class="nav-link font-label-md transition-colors duration-300 ease-in-out" data-nav="accueil" href="accueil.html">Accueil</a>
+      <a class="nav-link font-label-md transition-colors duration-300 ease-in-out" data-nav="menu" href="menu.html">Menu</a>
+      <a class="nav-link font-label-md transition-colors duration-300 ease-in-out" data-nav="gallery" href="Gallery.html">Gallery</a>
+      <a class="nav-link font-label-md transition-colors duration-300 ease-in-out" data-nav="about" href="about.html">About</a>
+      <a class="nav-link font-label-md transition-colors duration-300 ease-in-out" data-nav="contact" href="contact.html">Contact</a>
+    </nav>
+    <button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-label-md transition-colors duration-300 ease-in-out active:opacity-80 shadow-sm" type="button">Order Now</button>
+    
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="md:hidden text-stone-700 dark:text-stone-300 p-2 focus:outline-none">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-stone-50/95 dark:bg-stone-950/95 backdrop-blur-xl border-b border-stone-200 dark:border-stone-800 shadow-lg flex-col px-8 py-6 space-y-6">
+      <a class="nav-link font-label-md text-lg block" data-nav="accueil" href="accueil.html">Accueil</a>
+      <a class="nav-link font-label-md text-lg block" data-nav="menu" href="menu.html">Menu</a>
+      <a class="nav-link font-label-md text-lg block" data-nav="gallery" href="Gallery.html">Gallery</a>
+      <a class="nav-link font-label-md text-lg block" data-nav="about" href="about.html">About</a>
+      <a class="nav-link font-label-md text-lg block" data-nav="contact" href="contact.html">Contact</a>
+      <button class="bg-primary text-on-primary w-full py-3 rounded-full font-label-md mt-4 transition-colors duration-300 ease-in-out active:opacity-80 shadow-sm" type="button">Order Now</button>
+  </div>
+</header>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-variant": "#e4e2de",
+            "on-primary": "#ffffff",
+            "inverse-primary": "#ffb4ab",
+            "surface-container-high": "#eae8e4",
+            "primary-fixed": "#ffdad6",
+            "surface-container-lowest": "#ffffff",
+            "inverse-on-surface": "#f2f0ed",
+            "secondary-container": "#ffd7ce",
+            "inverse-surface": "#30312e",
+            "outline-variant": "#e5bdb8",
+            "on-surface": "#1b1c1a",
+            "on-error": "#ffffff",
+            "on-secondary-container": "#7a5b54",
+            "surface-container-highest": "#e4e2de",
+            "surface-tint": "#be0e16",
+            "on-tertiary-fixed": "#320047",
+            "error-container": "#ffdad6",
+            "on-tertiary-container": "#fde9ff",
+            "on-secondary": "#ffffff",
+            "secondary-fixed": "#ffdad2",
+            "surface-container": "#efeeea",
+            "on-secondary-fixed-variant": "#5c403a",
+            "tertiary-container": "#9c44c3",
+            "on-surface-variant": "#5c403c",
+            "primary-fixed-dim": "#ffb4ab",
+            "surface-bright": "#fbf9f5",
+            "on-tertiary-fixed-variant": "#721199",
+            "on-error-container": "#93000a",
+            "on-tertiary": "#ffffff",
+            "error": "#ba1a1a",
+            "on-secondary-fixed": "#2b1611",
+            "outline": "#916f6b",
+            "tertiary": "#8127a8",
+            "tertiary-fixed-dim": "#ebb2ff",
+            "secondary": "#755750",
+            "primary": "#ad000f",
+            "background": "#fbf9f5",
+            "on-primary-fixed-variant": "#93000b",
+            "surface-container-low": "#f5f3ef",
+            "surface-dim": "#dbdad6",
+            "surface": "#fbf9f5",
+            "primary-container": "#d32323",
+            "on-primary-container": "#ffebe9",
+            "tertiary-fixed": "#f8d8ff",
+            "on-primary-fixed": "#410002",
+            "secondary-fixed-dim": "#e5beb5",
+            "on-background": "#1b1c1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "sm": "12px",
+            "gutter": "16px",
+            "base": "8px",
+            "lg": "40px",
+            "xl": "64px",
+            "margin-safe": "24px",
+            "md": "24px",
+            "xs": "4px"
+          },
+          "fontFamily": {
+            "headline-md": ["Noto Serif"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Noto Serif"],
+            "display-lg": ["Noto Serif"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+            "label-md": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+            "display-lg": ["48px", { "lineHeight": "1.1", "fontWeight": "700" }],
+            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "label-sm": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500" }]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 24px;
+    }
+
+    .tonal-elevation {
+      box-shadow: 0 10px 30px -10px rgba(117, 87, 80, 0.05);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container">
+  <!-- TopAppBar -->
+  <div id="navbar-container"></div>
+  <main class="pt-32 pb-24 max-w-7xl mx-auto px-8">
+    <!-- Hero Branding Section -->
+    <section class="mb-16 text-center max-w-3xl mx-auto">
+      <h1 class="font-display-lg text-display-lg text-secondary mb-4">L'Art de la Table</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+        A visual journey through our artisanal kitchen. From the delicate fold of a fresh crepe to the precise bloom of
+        our morning espresso, every detail is crafted with intention.
+      </p>
+    </section>
+    <!-- Filter Chips -->
+    <div class="flex flex-wrap justify-center gap-3 mb-12">
+      <span
+        class="bg-primary text-on-primary px-5 py-1.5 rounded-full text-label-md cursor-pointer transition-colors">All</span>
+      <span
+        class="bg-surface-container-high text-secondary px-5 py-1.5 rounded-full text-label-md cursor-pointer hover:bg-secondary-container transition-colors">Crepes</span>
+      <span
+        class="bg-surface-container-high text-secondary px-5 py-1.5 rounded-full text-label-md cursor-pointer hover:bg-secondary-container transition-colors">Coffee</span>
+      <span
+        class="bg-surface-container-high text-secondary px-5 py-1.5 rounded-full text-label-md cursor-pointer hover:bg-secondary-container transition-colors">Interior</span>
+      <span
+        class="bg-tertiary-container/10 text-tertiary px-5 py-1.5 rounded-full text-label-md cursor-pointer hover:bg-tertiary-container/20 transition-colors">Seasonal</span>
+    </div>
+    <!-- Asymmetric Bento Gallery -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[280px]">
+      <!-- Large Focus Item -->
+      <div
+        class="gallery-item md:col-span-8 md:row-span-2 overflow-hidden rounded-xl border border-secondary/10 tonal-elevation group relative"
+        data-category="crepes">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="close-up of a sweet crepe with fresh strawberries, powdered sugar, and a drizzle of dark chocolate on a ceramic plate"
+          src="assets/images/food/food6.jpg" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white font-serif italic">The Signature Strawberry Galette</p>
+        </div>
+      </div>
+      <!-- Tall Portrait Item -->
+      <div
+        class="gallery-item md:col-span-4 md:row-span-2 overflow-hidden rounded-xl border border-secondary/10 tonal-elevation group relative"
+        data-category="coffee">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="vertical shot of a barista pouring latte art into a white ceramic cup with steam rising in a sunlit cafe"
+          src="assets/images/drink/Drink1.jpg" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white font-serif italic">Morning Ritual</p>
+        </div>
+      </div>
+      <!-- Square Items -->
+      <div
+        class="gallery-item md:col-span-4 md:row-span-1 overflow-hidden rounded-xl border border-secondary/10 tonal-elevation group"
+        data-category="interior">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="cozy cafe interior with wooden tables, soft warm lighting, and minimalist french decor elements"
+          src="assets/images/inside/inside.jpg" />
+      </div>
+      <div
+        class="gallery-item md:col-span-4 md:row-span-1 overflow-hidden rounded-xl border border-secondary/10 tonal-elevation group"
+        data-category="crepes">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="overhead shot of a savory buckwheat crepe with a sunny side up egg, gruyere, and fresh herbs"
+          src="assets/images/food/food7.jpg" />
+      </div>
+      <div
+        class="gallery-item md:col-span-4 md:row-span-1 overflow-hidden rounded-xl border border-secondary/10 tonal-elevation group"
+        data-category="interior">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="stack of vintage dessert plates and silver forks arranged aesthetically on a rustic wooden shelf"
+          src="assets/images/inside/inside2.jpg" />
+      </div>
+      <!-- Wide Item -->
+      <div
+        class="gallery-item md:col-span-6 md:row-span-1 overflow-hidden rounded-xl border border-secondary/10 tonal-elevation group"
+        data-category="interior">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="barista station with high-end espresso machine and rows of clean white coffee mugs on a marble counter"
+          src="assets/images/inside/inside4.jpg" />
+      </div>
+      <!-- Focus Item -->
+      <div
+        class="gallery-item md:col-span-6 md:row-span-1 overflow-hidden rounded-xl border border-secondary/10 tonal-elevation group"
+        data-category="seasonal">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="close-up of golden honey dripping onto a fresh lemon crepe with lavender sprigs"
+          src="assets/images/food/food8.jpg" />
+      </div>
+    </div>
+    <!-- Quote Section -->
+    <section class="mt-24 py-16 border-y border-stone-200 text-center">
+      <span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="format_quote">format_quote</span>
+      <blockquote class="font-display-lg text-headline-lg text-secondary italic max-w-2xl mx-auto">
+        "Cuisine is the bridge between the earth and the soul."
+      </blockquote>
+      <cite class="block mt-4 font-label-md text-on-surface-variant uppercase tracking-widest">— Chef Merveille</cite>
+    </section>
+    <!-- Masonry-like Secondary Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-24">
+      <div class="space-y-6">
+        <div class="gallery-item rounded-xl overflow-hidden border border-secondary/10 tonal-elevation h-96 group"
+          data-category="coffee">
+          <img class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            data-alt="close-up of artisanal coffee beans in a wooden bowl with natural side lighting"
+            src="assets/images/drink/drink2.jpg" />
+        </div>
+        <div class="gallery-item rounded-xl overflow-hidden border border-secondary/10 tonal-elevation h-64 group"
+          data-category="seasonal">
+          <img class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            data-alt="detail of a shop window with gold lettering reflecting a street scene in Paris at dusk"
+            src="assets/images/outside/outside.jpg" />
+        </div>
+      </div>
+      <div class="space-y-6 md:pt-12">
+        <div class="gallery-item rounded-xl overflow-hidden border border-secondary/10 tonal-elevation h-64 group"
+          data-category="crepes">
+          <img class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            data-alt="handheld shot of a crepe wrap held in brown paper packaging with a blurred cafe background"
+            src="assets/images/food/food9.jpg" />
+        </div>
+        <div class="gallery-item rounded-xl overflow-hidden border border-secondary/10 tonal-elevation h-96 group"
+          data-category="seasonal">
+          <img class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            data-alt="an assortment of miniature french pastries and macarons on a tiered serving tray"
+            src="assets/images/food/food10.jpg" />
+        </div>
+      </div>
+      <div class="space-y-6">
+        <div class="gallery-item rounded-xl overflow-hidden border border-secondary/10 tonal-elevation h-[32rem] group"
+          data-category="interior">
+          <img class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            data-alt="full interior shot of the coffee shop with high ceilings, exposed brick, and customers quietly reading at tables"
+            src="assets/images/inside/inside5.jpg" />
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <div id="footer-container"></div>
+  <script src="components/components-loader.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterChips = document.querySelectorAll('.filter-chip');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          // Reset all chips
+          filterChips.forEach(c => {
+            c.classList.remove('bg-primary', 'text-on-primary');
+            c.classList.add('bg-surface-container-high', 'text-secondary', 'hover:bg-secondary-container');
+          });
+
+          // Set clicked chip to active
+          chip.classList.remove('bg-surface-container-high', 'text-secondary', 'hover:bg-secondary-container');
+          chip.classList.add('bg-primary', 'text-on-primary');
+
+          const filter = chip.getAttribute('data-filter');
+
+          galleryItems.forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+              item.style.display = '';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

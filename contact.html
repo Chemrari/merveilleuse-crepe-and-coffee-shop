@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "surface-variant": "#e4e2de",
+                                                "on-primary": "#ffffff",
+                                                "inverse-primary": "#ffb4ab",
+                                                "surface-container-high": "#eae8e4",
+                                                "primary-fixed": "#ffdad6",
+                                                "surface-container-lowest": "#ffffff",
+                                                "inverse-on-surface": "#f2f0ed",
+                                                "secondary-container": "#ffd7ce",
+                                                "inverse-surface": "#30312e",
+                                                "outline-variant": "#e5bdb8",
+                                                "on-surface": "#1b1c1a",
+                                                "on-error": "#ffffff",
+                                                "on-secondary-container": "#7a5b54",
+                                                "surface-container-highest": "#e4e2de",
+                                                "surface-tint": "#be0e16",
+                                                "on-tertiary-fixed": "#320047",
+                                                "error-container": "#ffdad6",
+                                                "on-tertiary-container": "#fde9ff",
+                                                "on-secondary": "#ffffff",
+                                                "secondary-fixed": "#ffdad2",
+                                                "surface-container": "#efeeea",
+                                                "on-secondary-fixed-variant": "#5c403a",
+                                                "tertiary-container": "#9c44c3",
+                                                "on-surface-variant": "#5c403c",
+                                                "primary-fixed-dim": "#ffb4ab",
+                                                "surface-bright": "#fbf9f5",
+                                                "on-tertiary-fixed-variant": "#721199",
+                                                "on-error-container": "#93000a",
+                                                "on-tertiary": "#ffffff",
+                                                "error": "#ba1a1a",
+                                                "on-secondary-fixed": "#2b1611",
+                                                "outline": "#916f6b",
+                                                "tertiary": "#8127a8",
+                                                "tertiary-fixed-dim": "#ebb2ff",
+                                                "secondary": "#755750",
+                                                "primary": "#ad000f",
+                                                "background": "#fbf9f5",
+                                                "on-primary-fixed-variant": "#93000b",
+                                                "surface-container-low": "#f5f3ef",
+                                                "surface-dim": "#dbdad6",
+                                                "surface": "#fbf9f5",
+                                                "primary-container": "#d32323",
+                                                "on-primary-container": "#ffebe9",
+                                                "tertiary-fixed": "#f8d8ff",
+                                                "on-primary-fixed": "#410002",
+                                                "secondary-fixed-dim": "#e5beb5",
+                                                "on-background": "#1b1c1a"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.25rem",
+                                                "lg": "0.5rem",
+                                                "xl": "0.75rem",
+                                                "full": "9999px"
+                                        },
+                                        "spacing": {
+                                                "sm": "12px",
+                                                "gutter": "16px",
+                                                "base": "8px",
+                                                "lg": "40px",
+                                                "xl": "64px",
+                                                "margin-safe": "24px",
+                                                "md": "24px",
+                                                "xs": "4px"
+                                        },
+                                        "fontFamily": {
+                                                "headline-md": ["Noto Serif"],
+                                                "label-md": ["Plus Jakarta Sans"],
+                                                "body-lg": ["Plus Jakarta Sans"],
+                                                "headline-lg": ["Noto Serif"],
+                                                "display-lg": ["Noto Serif"],
+                                                "body-md": ["Plus Jakarta Sans"],
+                                                "label-sm": ["Plus Jakarta Sans"]
+                                        },
+                                        "fontSize": {
+                                                "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                                                "label-md": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                                                "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                                                "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                                                "display-lg": ["48px", { "lineHeight": "1.1", "fontWeight": "700" }],
+                                                "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                                                "label-sm": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500" }]
+                                        }
+                                },
+                        },
+                }
+        </script>
+        <style>
+                .material-symbols-outlined {
+                        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+                        display: inline-block;
+                        vertical-align: middle;
+                }
+
+                .text-shadow-subtle {
+                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+        </style>
+</head>
+
+<body class="bg-background text-on-background selection:bg-secondary-container selection:text-on-secondary-container">
+        <!-- TopAppBar -->
+        <div id="navbar-container"></div>
+        <main class="pt-32 pb-xl">
+                <section class="max-w-7xl mx-auto px-8 mb-xl text-center">
+                        <span class="font-label-md text-primary tracking-widest mb-sm uppercase block">Get In
+                                Touch</span>
+                        <h1 class="font-display-lg text-on-background mb-md">Contact Merveilleuse</h1>
+                        <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Questions, reservations, or
+                                catering requests? Send us a message or visit us in store.</p>
+                </section>
+                <!-- Location & Contact Grid -->
+                <section class="max-w-7xl mx-auto px-8 py-xl" id="contact">
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+                                <!-- Info Card -->
+                                <div class="lg:col-span-1 space-y-gutter">
+                                        <div class="bg-surface border border-surface-variant p-md rounded-xl">
+                                                <h3 class="font-headline-md mb-md">Visit Us</h3>
+                                                <div class="space-y-sm font-body-md text-on-surface-variant">
+                                                        <div class="flex items-start gap-sm">
+                                                                <span
+                                                                        class="material-symbols-outlined text-secondary">location_on</span>
+                                                                <span>981 US-98 Unit 4,<br />Destin, FL 32541</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-sm">
+                                                                <span
+                                                                        class="material-symbols-outlined text-secondary">call</span>
+                                                                <span>(850) 353-2101</span>
+                                                        </div>
+                                                </div>
+                                                <hr class="my-md border-stone-200" />
+                                                <h3 class="font-headline-md mb-sm text-lg">Hours of Operation</h3>
+                                                <div class="space-y-xs font-body-md text-on-surface-variant">
+                                                        <div class="flex justify-between">
+                                                                <span>Monday — Sunday</span>
+                                                                <span>08:00 AM — 08:00 PM</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div
+                                                class="bg-primary-container/10 p-md rounded-xl border border-primary-container/20">
+                                                <p class="font-label-md text-primary mb-xs">In a hurry?</p>
+                                                <p class="font-body-md text-on-surface-variant mb-md">Pre-order your
+                                                        morning coffee and crepe for a swift pickup.</p>
+                                                <button
+                                                        class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-md">Order
+                                                        for Pickup</button>
+                                        </div>
+                                </div>
+                                <!-- Form Card -->
+                                <div class="lg:col-span-2">
+                                        <div
+                                                class="bg-surface border border-surface-variant p-md rounded-xl h-full flex flex-col">
+                                                <h3 class="font-headline-md mb-md">Send a Message</h3>
+                                                <form id="contact-form" action="https://formspree.io/f/xojyzbbv"
+                                                        method="POST" class="space-y-gutter flex-grow">
+
+                                                        <!-- honeypot -->
+                                                        <input type="text" name="_gotcha" style="display:none">
+
+                                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+
+                                                                <div>
+                                                                        <label for="form-name"
+                                                                                class="block font-label-md mb-xs">Full
+                                                                                Name</label>
+                                                                        <input id="form-name" name="name"
+                                                                                class="w-full bg-stone-100 border-none rounded-lg focus:ring-2 focus:ring-primary p-3 font-body-md"
+                                                                                placeholder="Jean-Pierre" type="text"
+                                                                                required />
+                                                                </div>
+
+                                                                <div>
+                                                                        <label for="form-email"
+                                                                                class="block font-label-md mb-xs">Email
+                                                                                Address</label>
+                                                                        <input id="form-email" name="email"
+                                                                                class="w-full bg-stone-100 border-none rounded-lg focus:ring-2 focus:ring-primary p-3 font-body-md"
+                                                                                placeholder="hello@example.com"
+                                                                                type="email" required />
+                                                                </div>
+
+                                                        </div>
+
+                                                        <div>
+                                                                <label class="block font-label-md mb-xs">Subject</label>
+                                                                <select name="subject"
+                                                                        class="w-full bg-stone-100 border-none rounded-lg focus:ring-2 focus:ring-primary p-3 font-body-md">
+                                                                        <option>General Inquiry</option>
+                                                                        <option>Catering Request</option>
+                                                                        <option>Careers</option>
+                                                                        <option>Feedback</option>
+                                                                </select>
+                                                        </div>
+
+                                                        <div>
+                                                                <label class="block font-label-md mb-xs">Message</label>
+                                                                <textarea name="message"
+                                                                        class="w-full bg-stone-100 border-none rounded-lg focus:ring-2 focus:ring-primary p-3 font-body-md"
+                                                                        placeholder="How can we help you today?"
+                                                                        rows="5" required></textarea>
+                                                        </div>
+
+                                                        <input type="hidden" name="_subject"
+                                                                value="New Contact Message">
+
+                                                        <button type="submit"
+                                                                class="bg-on-surface text-surface py-4 px-xl rounded-lg font-label-md hover:bg-stone-800 transition-colors">
+                                                                Send Message
+                                                        </button>
+
+                                                </form>
+                                                <script>
+                                                        document.getElementById('contact-form').addEventListener('submit', function (e) {
+                                                                var name = document.getElementById('form-name').value;
+                                                                var email = document.getElementById('form-email').value;
+                                                                if (name === "" || email === "") {
+                                                                        e.preventDefault();
+                                                                        alert("Fill all fields");
+                                                                }
+                                                        });
+                                                </script>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Map Section - Full Width -->
+                <section class="px-8 max-w-7xl mx-auto">
+                        <div
+                                class="h-96 rounded-2xl overflow-hidden shadow-inner grayscale contrast-75 hover:grayscale-0 transition-all duration-700">
+                                <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0"
+                                        marginwidth="0"
+                                        src="https://maps.google.com/maps?q=Merveilleuse%20Crepe%20and%20Coffee%20Shop,%20981%20US-98%20Unit%204,%20Destin,%20FL%2032541&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+                        </div>
+                </section>
+                <section class="max-w-7xl mx-auto px-8 py-xl" id="reviews">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-start">
+                                <div class="bg-surface border border-surface-variant p-md rounded-xl">
+                                        <h3 class="font-headline-md mb-sm">Add Your Review</h3>
+                                        <p class="font-body-md text-on-surface-variant mb-md">Share your experience with our crepes and coffee.</p>
+                                        <form id="review-form" class="space-y-gutter">
+                                                <div>
+                                                        <label for="review-name" class="block font-label-md mb-xs">Name</label>
+                                                        <input id="review-name" name="name" type="text" required
+                                                                class="w-full bg-stone-100 border-none rounded-lg focus:ring-2 focus:ring-primary p-3 font-body-md"
+                                                                placeholder="Your name" />
+                                                </div>
+                                                <div>
+                                                        <label for="review-rating" class="block font-label-md mb-xs">Rating</label>
+                                                        <select id="review-rating" name="rating" required
+                                                                class="w-full bg-stone-100 border-none rounded-lg focus:ring-2 focus:ring-primary p-3 font-body-md">
+                                                                <option value="5">5 - Excellent</option>
+                                                                <option value="4">4 - Very Good</option>
+                                                                <option value="3">3 - Good</option>
+                                                                <option value="2">2 - Fair</option>
+                                                                <option value="1">1 - Poor</option>
+                                                        </select>
+                                                </div>
+                                                <div>
+                                                        <label for="review-message" class="block font-label-md mb-xs">Review</label>
+                                                        <textarea id="review-message" name="message" rows="4" required
+                                                                class="w-full bg-stone-100 border-none rounded-lg focus:ring-2 focus:ring-primary p-3 font-body-md"
+                                                                placeholder="Tell us what you loved..."></textarea>
+                                                </div>
+                                                <button type="submit"
+                                                        class="bg-primary text-on-primary py-3 px-xl rounded-lg font-label-md hover:bg-primary-container transition-colors">
+                                                        Submit Review
+                                                </button>
+                                                <p id="review-status" class="font-label-sm text-on-surface-variant"></p>
+                                        </form>
+                                </div>
+                                <div class="bg-surface border border-surface-variant p-md rounded-xl">
+                                        <h3 class="font-headline-md mb-sm">Customer Reviews</h3>
+                                        <p class="font-body-md text-on-surface-variant mb-md">Latest reviews from our guests.</p>
+                                        <div id="review-list" class="space-y-sm"></div>
+                                </div>
+                        </div>
+                </section>
+        </main>
+        <!-- Footer -->
+        <div id="footer-container"></div>
+        <script src="components/components-loader.js"></script>
+        <script src="assets/js/contact-reviews.js"></script>
+</body>
+
+</html>
