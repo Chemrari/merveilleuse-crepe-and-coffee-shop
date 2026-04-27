@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 
@@ -14,6 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
     rel="stylesheet" />
+  <link href="assets/css/site.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
     tailwind.config = {
@@ -127,30 +128,35 @@
 <body class="bg-background text-on-surface font-body-md selection:bg-secondary-container">
   <!-- TopAppBar -->
   <div id="navbar-container"></div>
-  <main class="pt-32 pb-24 max-w-7xl mx-auto px-8">
+  <main class="page-main">
     <!-- Hero Branding Section -->
-    <section class="mb-16 text-center max-w-3xl mx-auto">
-      <h1 class="font-display-lg text-display-lg text-secondary mb-4">L'Art de la Table</h1>
+    <section class="page-section page-shell mb-16 text-center max-w-3xl mx-auto">
+      <h1 class="hero-title font-display-lg text-secondary mb-4">L'Art de la Table</h1>
       <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
         A visual journey through our artisanal kitchen. From the delicate fold of a fresh crepe to the precise bloom of
         our morning espresso, every detail is crafted with intention.
       </p>
     </section>
     <!-- Filter Chips -->
-    <div class="flex flex-wrap justify-center gap-3 mb-12">
-      <span
-        class="bg-primary text-on-primary px-5 py-1.5 rounded-full text-label-md cursor-pointer transition-colors">All</span>
-      <span
-        class="bg-surface-container-high text-secondary px-5 py-1.5 rounded-full text-label-md cursor-pointer hover:bg-secondary-container transition-colors">Crepes</span>
-      <span
-        class="bg-surface-container-high text-secondary px-5 py-1.5 rounded-full text-label-md cursor-pointer hover:bg-secondary-container transition-colors">Coffee</span>
-      <span
-        class="bg-surface-container-high text-secondary px-5 py-1.5 rounded-full text-label-md cursor-pointer hover:bg-secondary-container transition-colors">Interior</span>
-      <span
-        class="bg-tertiary-container/10 text-tertiary px-5 py-1.5 rounded-full text-label-md cursor-pointer hover:bg-tertiary-container/20 transition-colors">Seasonal</span>
+    <div class="page-shell flex flex-wrap justify-center gap-3 mb-12">
+      <button
+        class="filter-chip is-active bg-primary text-on-primary px-5 py-2 rounded-full text-label-md transition-colors"
+        data-filter="all" type="button">All</button>
+      <button
+        class="filter-chip bg-surface-container-high text-secondary px-5 py-2 rounded-full text-label-md hover:bg-secondary-container transition-colors"
+        data-filter="crepes" type="button">Crepes</button>
+      <button
+        class="filter-chip bg-surface-container-high text-secondary px-5 py-2 rounded-full text-label-md hover:bg-secondary-container transition-colors"
+        data-filter="coffee" type="button">Coffee</button>
+      <button
+        class="filter-chip bg-surface-container-high text-secondary px-5 py-2 rounded-full text-label-md hover:bg-secondary-container transition-colors"
+        data-filter="interior" type="button">Interior</button>
+      <button
+        class="filter-chip bg-surface-container-high text-secondary px-5 py-2 rounded-full text-label-md hover:bg-secondary-container transition-colors"
+        data-filter="seasonal" type="button">Seasonal</button>
     </div>
     <!-- Asymmetric Bento Gallery -->
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[280px]">
+    <div class="page-shell grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 auto-rows-[240px] md:auto-rows-[280px]">
       <!-- Large Focus Item -->
       <div
         class="gallery-item md:col-span-8 md:row-span-2 overflow-hidden rounded-xl border border-secondary/10 tonal-elevation group relative"
@@ -215,15 +221,15 @@
       </div>
     </div>
     <!-- Quote Section -->
-    <section class="mt-24 py-16 border-y border-stone-200 text-center">
+    <section class="page-shell mt-16 md:mt-24 py-16 border-y border-stone-200 text-center">
       <span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="format_quote">format_quote</span>
       <blockquote class="font-display-lg text-headline-lg text-secondary italic max-w-2xl mx-auto">
         "Cuisine is the bridge between the earth and the soul."
       </blockquote>
-      <cite class="block mt-4 font-label-md text-on-surface-variant uppercase tracking-widest">— Chef Merveille</cite>
+      <cite class="block mt-4 font-label-md text-on-surface-variant uppercase tracking-widest">- Chef Merveille</cite>
     </section>
     <!-- Masonry-like Secondary Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-24">
+    <div class="page-shell grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 md:mt-24">
       <div class="space-y-6">
         <div class="gallery-item rounded-xl overflow-hidden border border-secondary/10 tonal-elevation h-96 group"
           data-category="coffee">
@@ -274,21 +280,21 @@
         chip.addEventListener('click', () => {
           // Reset all chips
           filterChips.forEach(c => {
-            c.classList.remove('bg-primary', 'text-on-primary');
+            c.classList.remove('is-active', 'bg-primary', 'text-on-primary');
             c.classList.add('bg-surface-container-high', 'text-secondary', 'hover:bg-secondary-container');
           });
 
           // Set clicked chip to active
           chip.classList.remove('bg-surface-container-high', 'text-secondary', 'hover:bg-secondary-container');
-          chip.classList.add('bg-primary', 'text-on-primary');
+          chip.classList.add('is-active', 'bg-primary', 'text-on-primary');
 
           const filter = chip.getAttribute('data-filter');
 
           galleryItems.forEach(item => {
             if (filter === 'all' || item.getAttribute('data-category') === filter) {
-              item.style.display = '';
+              item.classList.remove('is-hidden');
             } else {
-              item.style.display = 'none';
+              item.classList.add('is-hidden');
             }
           });
         });
@@ -298,3 +304,5 @@
 </body>
 
 </html>
+
+

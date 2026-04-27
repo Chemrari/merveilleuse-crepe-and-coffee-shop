@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html class="light" lang="en">
 
@@ -6,6 +6,7 @@
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="assets/css/site.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap"
                 rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -120,20 +121,20 @@
 <body class="bg-background text-on-background selection:bg-secondary-container selection:text-on-secondary-container">
         <!-- TopAppBar -->
         <div id="navbar-container"></div>
-        <main class="pt-32 pb-xl">
-                <section class="max-w-7xl mx-auto px-8 mb-xl text-center">
+        <main class="page-main">
+                <section class="page-section page-shell text-center">
                         <span class="font-label-md text-primary tracking-widest mb-sm uppercase block">Get In
                                 Touch</span>
-                        <h1 class="font-display-lg text-on-background mb-md">Contact Merveilleuse</h1>
+                        <h1 class="hero-title font-display-lg text-on-background mb-md">Contact Merveilleuse</h1>
                         <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Questions, reservations, or
                                 catering requests? Send us a message or visit us in store.</p>
                 </section>
                 <!-- Location & Contact Grid -->
-                <section class="max-w-7xl mx-auto px-8 py-xl" id="contact">
-                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+                <section class="page-section page-shell" id="contact">
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-gutter">
                                 <!-- Info Card -->
                                 <div class="lg:col-span-1 space-y-gutter">
-                                        <div class="bg-surface border border-surface-variant p-md rounded-xl">
+                                        <div class="card-hover bg-surface border border-surface-variant p-md rounded-xl">
                                                 <h3 class="font-headline-md mb-md">Visit Us</h3>
                                                 <div class="space-y-sm font-body-md text-on-surface-variant">
                                                         <div class="flex items-start gap-sm">
@@ -151,25 +152,25 @@
                                                 <h3 class="font-headline-md mb-sm text-lg">Hours of Operation</h3>
                                                 <div class="space-y-xs font-body-md text-on-surface-variant">
                                                         <div class="flex justify-between">
-                                                                <span>Monday — Sunday</span>
-                                                                <span>08:00 AM — 08:00 PM</span>
+                                                                <span>Monday - Sunday</span>
+                                                                <span>08:00 AM - 08:00 PM</span>
                                                         </div>
                                                 </div>
                                         </div>
                                         <div
-                                                class="bg-primary-container/10 p-md rounded-xl border border-primary-container/20">
+                                                class="card-hover bg-primary-container/10 p-md rounded-xl border border-primary-container/20">
                                                 <p class="font-label-md text-primary mb-xs">In a hurry?</p>
                                                 <p class="font-body-md text-on-surface-variant mb-md">Pre-order your
                                                         morning coffee and crepe for a swift pickup.</p>
-                                                <button
-                                                        class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-md">Order
-                                                        for Pickup</button>
+                                                <a href="menu.html"
+                                                        class="inline-flex w-full items-center justify-center bg-primary text-on-primary py-3 rounded-lg font-label-md">Browse
+                                                        the Menu</a>
                                         </div>
                                 </div>
                                 <!-- Form Card -->
                                 <div class="lg:col-span-2">
                                         <div
-                                                class="bg-surface border border-surface-variant p-md rounded-xl h-full flex flex-col">
+                                                class="card-hover bg-surface border border-surface-variant p-md rounded-xl h-full flex flex-col">
                                                 <h3 class="font-headline-md mb-md">Send a Message</h3>
                                                 <form id="contact-form" action="https://formspree.io/f/xojyzbbv"
                                                         method="POST" class="space-y-gutter flex-grow">
@@ -244,7 +245,7 @@
                         </div>
                 </section>
                 <!-- Map Section - Full Width -->
-                <section class="px-8 max-w-7xl mx-auto">
+                <section class="page-section page-shell">
                         <div
                                 class="h-96 rounded-2xl overflow-hidden shadow-inner grayscale contrast-75 hover:grayscale-0 transition-all duration-700">
                                 <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0"
@@ -252,9 +253,9 @@
                                         src="https://maps.google.com/maps?q=Merveilleuse%20Crepe%20and%20Coffee%20Shop,%20981%20US-98%20Unit%204,%20Destin,%20FL%2032541&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
                         </div>
                 </section>
-                <section class="max-w-7xl mx-auto px-8 py-xl" id="reviews">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-start">
-                                <div class="bg-surface border border-surface-variant p-md rounded-xl">
+                <section class="page-shell" id="reviews">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-gutter items-start">
+                                <div class="card-hover bg-surface border border-surface-variant p-md rounded-xl">
                                         <h3 class="font-headline-md mb-sm">Add Your Review</h3>
                                         <p class="font-body-md text-on-surface-variant mb-md">Share your experience with our crepes and coffee.</p>
                                         <form id="review-form" class="space-y-gutter">
@@ -288,7 +289,7 @@
                                                 <p id="review-status" class="font-label-sm text-on-surface-variant"></p>
                                         </form>
                                 </div>
-                                <div class="bg-surface border border-surface-variant p-md rounded-xl">
+                                <div class="card-hover bg-surface border border-surface-variant p-md rounded-xl">
                                         <h3 class="font-headline-md mb-sm">Customer Reviews</h3>
                                         <p class="font-body-md text-on-surface-variant mb-md">Latest reviews from our guests.</p>
                                         <div id="review-list" class="space-y-sm"></div>
@@ -303,3 +304,5 @@
 </body>
 
 </html>
+
+

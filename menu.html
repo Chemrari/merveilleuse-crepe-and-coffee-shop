@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/site.css" rel="stylesheet"/>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -113,124 +114,139 @@
 <body class="bg-background text-on-background font-body-md">
 <!-- TopAppBar -->
 <div id="navbar-container"></div>
-<main class="pt-24 md:pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
+<main class="page-main">
 <!-- Hero Section -->
-<div class="mb-20 text-center">
-<h1 class="font-display-lg text-display-lg text-on-background mb-4">L'Art de la Crêpe</h1>
+<div class="page-section page-shell text-center">
+<h1 class="hero-title font-display-lg text-on-background mb-4">L'Art de la Crepe</h1>
 <p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">Explore our artisanal selection of sweet and savory crepes, paired perfectly with our house-roasted specialty coffees.</p>
 </div>
+<div class="page-shell mb-10 flex flex-wrap justify-center gap-3">
+<a class="rounded-full border border-stone-300 px-4 py-2 text-sm font-semibold text-stone-700 hover:border-stone-400 hover:text-stone-900" href="#signature-crepes">Signature</a>
+<a class="rounded-full border border-stone-300 px-4 py-2 text-sm font-semibold text-stone-700 hover:border-stone-400 hover:text-stone-900" href="#dessert-crepes">Desserts</a>
+<a class="rounded-full border border-stone-300 px-4 py-2 text-sm font-semibold text-stone-700 hover:border-stone-400 hover:text-stone-900" href="#sweet-menu">Sweet Menu</a>
+<a class="rounded-full border border-stone-300 px-4 py-2 text-sm font-semibold text-stone-700 hover:border-stone-400 hover:text-stone-900" href="#drinks-menu">Drinks</a>
+</div>
 <!-- Section: Savory Crepes -->
-<section class="mb-24">
+<section class="page-section page-shell" id="signature-crepes">
 <div class="flex items-center gap-4 mb-12">
 <h2 class="font-headline-lg text-3xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">Featured Signature Crepes</h2>
 <div class="h-px bg-outline-variant w-full"></div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="featured-grid">
 <!-- Menu Item Card -->
-<div class="group bg-surface-container-low border border-stone-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg">
-<div class="aspect-[4/3] overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Signature pistachio crepe filled with rich pistachio cream and topped with crushed pistachios." src="assets/images/food/food8.jpg"/>
-</div>
-<div class="p-md">
-<div class="flex justify-between items-baseline mb-2">
-<h3 class="font-headline-md text-headline-md">Pistache Royale Crepe</h3>
-<span class="font-headline-md text-primary">$15.99</span>
-</div>
-<p class="text-secondary font-body-md mb-4">A royal combination with rich pistachio cream and crushed nuts.</p>
-<div class="flex gap-2">
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-label-sm font-label-sm">Signature</span>
+<article class="featured-card featured-card-hero card-hover group">
+<div class="featured-card-media">
+<img data-alt="Signature pistachio crepe filled with rich pistachio cream and topped with crushed pistachios." src="assets/images/food/food8.jpg"/>
+<div class="featured-card-overlay">
+<span class="featured-card-badge featured-card-badge-light">Chef Pick</span>
 </div>
 </div>
+<div class="featured-card-body">
+<p class="featured-card-kicker">Signature selection</p>
+<div class="featured-card-top">
+<h3 class="font-headline-md text-headline-md text-on-background">Pistache Royale Crepe</h3>
+<span class="featured-card-price">$15.99</span>
 </div>
-<div class="group bg-surface-container-low border border-stone-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg">
-<div class="aspect-[4/3] overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Merveilleuse bowl crepe served with fresh fruit, house toppings, and signature flavor combinations." src="assets/images/food/food7.jpg"/>
+<p class="featured-card-copy">A royal combination with rich pistachio cream and crushed nuts.</p>
+<p class="featured-card-subcopy">Finished with a rich pistachio profile that makes it one of the cafe's most recognizable desserts.</p>
 </div>
-<div class="p-md">
-<div class="flex justify-between items-baseline mb-2">
-<h3 class="font-headline-md text-headline-md">Merveilleuse Bowl Crepe</h3>
-<span class="font-headline-md text-primary">$14.50</span>
+</article>
+<div class="featured-stack">
+<article class="featured-card featured-card-compact card-hover group">
+<div class="featured-card-media">
+<img data-alt="Merveilleuse bowl crepe served with fresh fruit, house toppings, and signature flavor combinations." src="assets/images/food/food7.jpg"/>
 </div>
-<p class="text-secondary font-body-md mb-4">Our signature house bowl crepe loaded with fresh toppings and flavor.</p>
+<div class="featured-card-body">
+<p class="featured-card-kicker">House favorite</p>
+<div class="featured-card-top">
+<h3 class="font-headline-md text-headline-md text-on-background">Merveilleuse Bowl Crepe</h3>
+<span class="featured-card-price">$14.50</span>
 </div>
+<p class="featured-card-copy">Our signature house bowl crepe loaded with fresh toppings and flavor.</p>
 </div>
-<div class="group bg-surface-container-low border border-stone-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg">
-<div class="aspect-[4/3] overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Crepe Ferrero topped with hazelnut chocolate, crushed nuts, and a Ferrero-style praline." src="assets/images/food/food6.jpg"/>
+</article>
+<article class="featured-card featured-card-compact card-hover group">
+<div class="featured-card-media">
+<img data-alt="Crepe Ferrero topped with hazelnut chocolate, crushed nuts, and a Ferrero-style praline." src="assets/images/food/food6.jpg"/>
 </div>
-<div class="p-md">
-<div class="flex justify-between items-baseline mb-2">
-<h3 class="font-headline-md text-headline-md">Crepe Ferrero</h3>
-<span class="font-headline-md text-primary">$13.99</span>
+<div class="featured-card-body">
+<p class="featured-card-kicker">Chocolate lover</p>
+<div class="featured-card-top">
+<h3 class="font-headline-md text-headline-md text-on-background">Crepe Ferrero</h3>
+<span class="featured-card-price">$13.99</span>
 </div>
-<p class="text-secondary font-body-md mb-4">Layers of hazelnut chocolate with crunchy nuts and Ferrero-inspired flavor.</p>
-<div class="flex gap-2">
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-label-sm font-label-sm">Signature</span>
+<p class="featured-card-copy">Layers of hazelnut chocolate with crunchy nuts and Ferrero-inspired flavor.</p>
+<span class="featured-card-badge">Signature</span>
 </div>
-</div>
+</article>
 </div>
 </div>
 </section>
 <!-- Section: Sweet Crepes -->
-<section class="mb-24">
+<section class="page-section page-shell" id="dessert-crepes">
 <div class="flex items-center gap-4 mb-12">
 <h2 class="font-headline-lg text-3xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">Featured Dessert Crepes</h2>
 <div class="h-px bg-outline-variant w-full"></div>
 </div>
 <!-- Bento Grid for Sweets -->
-<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[600px]">
-<div class="md:col-span-2 md:row-span-2 group relative bg-stone-900 rounded-lg overflow-hidden min-h-[350px] md:min-h-0">
-<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Large sweet crepe topped with fresh strawberries, sliced bananas, and a generous drizzle of dark chocolate" src="assets/images/food/food4.jpg"/>
-<div class="absolute bottom-0 left-0 p-md bg-gradient-to-t from-black/80 to-transparent w-full">
-<div class="flex justify-between items-end">
+<div class="dessert-showcase">
+<article class="dessert-hero group">
+<img class="opacity-85 group-hover:scale-105 transition-transform duration-700" data-alt="Large sweet crepe topped with fresh strawberries, sliced bananas, and a generous drizzle of dark chocolate" src="assets/images/food/food4.jpg"/>
+<div class="dessert-hero-copy">
+<span class="dessert-note">House Favorite</span>
+<div class="flex justify-between items-end gap-4">
 <div>
 <h3 class="font-headline-lg text-on-primary mb-1">Nutella Fraise</h3>
 <p class="text-stone-300 font-body-md">Fresh strawberries paired with rich Nutella.</p>
 </div>
-<span class="font-headline-md text-on-primary">$12.99</span>
+<span class="featured-card-price">$12.99</span>
 </div>
 </div>
-</div>
-<div class="md:col-span-2 group relative bg-stone-100 rounded-lg overflow-hidden border border-stone-200 min-h-[200px] md:min-h-0">
-<div class="flex h-full">
-<div class="p-md flex flex-col justify-center flex-1">
+</article>
+<article class="dessert-side-card card-hover group">
+<div class="dessert-side-card-inner">
+<div class="dessert-side-body flex flex-col justify-center flex-1">
 <h3 class="font-headline-md text-headline-md mb-1">Oreo Crepe</h3>
 <p class="text-secondary font-body-md mb-2">Crushed Oreos and delicious sweet cream.</p>
-<span class="font-headline-md text-primary">$12.99</span>
+<span class="featured-card-price self-start">$12.99</span>
 </div>
-<div class="w-1/3 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Classic Crepe Suzette with caramelized orange segments and a glossy citrus sauce" src="assets/images/food/food5.jpg"/>
+<div class="dessert-side-media overflow-hidden">
+<img class="group-hover:scale-110 transition-transform duration-700" data-alt="Classic Crepe Suzette with caramelized orange segments and a glossy citrus sauce" src="assets/images/food/food5.jpg"/>
 </div>
 </div>
-</div>
-<div class="md:col-span-1 group relative bg-surface-container-low rounded-lg overflow-hidden border border-stone-200 min-h-[150px] md:min-h-0">
-<div class="p-md h-full flex flex-col justify-between">
+</article>
+<article class="dessert-mini-card card-hover">
+<div class="dessert-mini-body">
 <div>
 <h3 class="font-headline-md text-headline-md mb-1">Strawberry And Cream</h3>
 <p class="text-secondary text-sm">Fresh strawberries and whipped cream.</p>
 </div>
-<span class="font-headline-md text-primary">$12.99</span>
+<span class="featured-card-price self-start">$12.99</span>
 </div>
-</div>
-<div class="md:col-span-1 group relative bg-surface-container-low rounded-lg overflow-hidden border border-stone-200 min-h-[150px] md:min-h-0">
-<div class="p-md h-full flex flex-col justify-between">
+</article>
+<article class="dessert-mini-card card-hover">
+<div class="dessert-mini-body">
 <div>
 <h3 class="font-headline-md text-headline-md mb-1">Triple Chocolate Crepe</h3>
 <p class="text-secondary text-sm">Dark, milk, and white chocolate layers.</p>
 </div>
-<span class="font-headline-md text-primary">$12.99</span>
+<span class="featured-card-price self-start">$12.99</span>
 </div>
-</div>
+</article>
 </div>
 </section>
 <!-- Section: Full Menu (Text Lists) -->
-<section class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-24">
+<section class="page-section page-shell grid grid-cols-1 xl:grid-cols-3 gap-6 md:gap-8" id="sweet-menu">
     <!-- French Crepes -->
-    <div>
-        <div class="flex items-center gap-4 mb-8">
-            <h2 class="font-headline-lg text-3xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">French Crepes</h2>
-            <div class="h-px bg-outline-variant w-full"></div>
-        </div>
+    <details class="menu-category" open>
+        <summary class="menu-summary">
+            <div class="menu-summary-title flex items-center gap-4">
+                <h2 class="font-headline-lg text-2xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">French Crepes</h2>
+                <div class="hidden md:block h-px bg-outline-variant w-full"></div>
+            </div>
+            <span class="menu-summary-icon">+</span>
+        </summary>
+        <div class="menu-panel">
         <div class="space-y-4">
             <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
                 <h4 class="font-headline-md text-base">Golden Classic</h4>
@@ -273,7 +289,7 @@
                 <span class="font-headline-md text-on-background">$13.99</span>
             </div>
             <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
-                <h4 class="font-headline-md text-base">Le Délice Bueno</h4>
+                <h4 class="font-headline-md text-base">Le DÃ©lice Bueno</h4>
                 <span class="font-headline-md text-on-background">$13.99</span>
             </div>
             <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
@@ -296,14 +312,19 @@
             <p class="font-label-sm text-secondary mb-2 uppercase tracking-wider text-xs">Sauces</p>
             <p class="font-body-md text-on-surface-variant text-sm">Milk Chocolate, White Chocolate, Dark Chocolate, Caramel, Nutella, Biscoff, Pistachio, Fudge, Strawberry Sauce, Salted Caramel, Condensed Milk</p>
         </div>
-    </div>
+        </div>
+    </details>
     
     <!-- Belgian Waffles -->
-    <div>
-        <div class="flex items-center gap-4 mb-8">
-            <h2 class="font-headline-lg text-3xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">Belgian Waffles</h2>
-            <div class="h-px bg-outline-variant w-full"></div>
-        </div>
+    <details class="menu-category">
+        <summary class="menu-summary">
+            <div class="menu-summary-title flex items-center gap-4">
+                <h2 class="font-headline-lg text-2xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">Belgian Waffles</h2>
+                <div class="hidden md:block h-px bg-outline-variant w-full"></div>
+            </div>
+            <span class="menu-summary-icon">+</span>
+        </summary>
+        <div class="menu-panel">
         <div class="space-y-4">
             <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
                 <h4 class="font-headline-md text-base">Just a waffle</h4>
@@ -338,14 +359,19 @@
                 <span class="font-headline-md text-on-background">$13.50</span>
             </div>
         </div>
-    </div>
+        </div>
+    </details>
 
     <!-- Pastries -->
-    <div>
-        <div class="flex items-center gap-4 mb-8">
-            <h2 class="font-headline-lg text-3xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">Pastries</h2>
-            <div class="h-px bg-outline-variant w-full"></div>
-        </div>
+    <details class="menu-category">
+        <summary class="menu-summary">
+            <div class="menu-summary-title flex items-center gap-4">
+                <h2 class="font-headline-lg text-2xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">Pastries</h2>
+                <div class="hidden md:block h-px bg-outline-variant w-full"></div>
+            </div>
+            <span class="menu-summary-icon">+</span>
+        </summary>
+        <div class="menu-panel">
         <div class="space-y-4">
             <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
                 <h4 class="font-headline-md text-base">Creme brulee</h4>
@@ -372,17 +398,22 @@
                 <span class="font-headline-md text-on-background">$15.99</span>
             </div>
         </div>
-    </div>
+        </div>
+    </details>
 </section>
 
 <!-- Section: Specialty Coffee & Drinks -->
-<section class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<section class="page-shell grid grid-cols-1 xl:grid-cols-3 gap-6 md:gap-8" id="drinks-menu">
     <!-- Coffee -->
-    <div>
-        <div class="flex items-center gap-4 mb-8">
-            <h2 class="font-headline-lg text-3xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">Coffee</h2>
-            <div class="h-px bg-outline-variant w-full"></div>
-        </div>
+    <details class="menu-category" open>
+        <summary class="menu-summary">
+            <div class="menu-summary-title flex items-center gap-4">
+                <h2 class="font-headline-lg text-2xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">Coffee</h2>
+                <div class="hidden md:block h-px bg-outline-variant w-full"></div>
+            </div>
+            <span class="menu-summary-icon">+</span>
+        </summary>
+        <div class="menu-panel">
         <div class="space-y-4">
             <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
                 <h4 class="font-headline-md text-base">Latte</h4>
@@ -433,14 +464,19 @@
                 <span class="font-headline-md text-on-background">$1.99</span>
             </div>
         </div>
-    </div>
+        </div>
+    </details>
 
     <!-- Tea -->
-    <div>
-        <div class="flex items-center gap-4 mb-8">
-            <h2 class="font-headline-lg text-3xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">Tea</h2>
-            <div class="h-px bg-outline-variant w-full"></div>
-        </div>
+    <details class="menu-category">
+        <summary class="menu-summary">
+            <div class="menu-summary-title flex items-center gap-4">
+                <h2 class="font-headline-lg text-2xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">Tea</h2>
+                <div class="hidden md:block h-px bg-outline-variant w-full"></div>
+            </div>
+            <span class="menu-summary-icon">+</span>
+        </summary>
+        <div class="menu-panel">
         <div class="space-y-4">
             <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
                 <h4 class="font-headline-md text-base">Black Tea</h4>
@@ -455,14 +491,19 @@
                 <span class="font-headline-md text-on-background">$4.99</span>
             </div>
         </div>
-    </div>
+        </div>
+    </details>
 
     <!-- Cold Drinks -->
-    <div>
-        <div class="flex items-center gap-4 mb-8">
-            <h2 class="font-headline-lg text-3xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">Cold Drinks</h2>
-            <div class="h-px bg-outline-variant w-full"></div>
-        </div>
+    <details class="menu-category">
+        <summary class="menu-summary">
+            <div class="menu-summary-title flex items-center gap-4">
+                <h2 class="font-headline-lg text-2xl md:text-headline-lg text-on-background whitespace-normal md:whitespace-nowrap">Cold Drinks</h2>
+                <div class="hidden md:block h-px bg-outline-variant w-full"></div>
+            </div>
+            <span class="menu-summary-icon">+</span>
+        </summary>
+        <div class="menu-panel">
         <div class="space-y-4">
             <div class="flex justify-between items-baseline border-b border-stone-100 pb-2">
                 <h4 class="font-headline-md text-base">HAWAII</h4>
@@ -497,12 +538,35 @@
             <p class="font-label-sm text-secondary mb-2 uppercase tracking-wider text-xs">Flavors</p>
             <p class="font-body-md text-on-surface-variant text-sm">Vanilla, Caramel, Hazelnut, Salted Caramel</p>
         </div>
-    </div>
+        </div>
+    </details>
 </section>
 
 </main>
 <!-- Footer -->
 <div id="footer-container"></div>
 <script src="components/components-loader.js"></script>
+<script>
+  (function () {
+    var categories = document.querySelectorAll('.menu-category');
+
+    function syncMenuCategories() {
+      var isDesktop = window.innerWidth >= 768;
+
+      categories.forEach(function (category, index) {
+        if (isDesktop) {
+          category.setAttribute('open', '');
+        } else if (index !== 0 && index !== 3) {
+          category.removeAttribute('open');
+        }
+      });
+    }
+
+    syncMenuCategories();
+    window.addEventListener('resize', syncMenuCategories);
+  })();
+</script>
 </body></html>
+
+
 

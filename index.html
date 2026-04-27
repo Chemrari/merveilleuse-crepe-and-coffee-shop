@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en"><head>
 <meta charset="utf-8"/>
@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/site.css" rel="stylesheet"/>
 <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -106,16 +107,16 @@
 <div id="navbar-container"></div>
 <main>
 <!-- Hero Section -->
-<section class="relative h-screen md:h-screen flex items-center overflow-hidden">
+<section class="relative flex min-h-[100svh] items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
 <img alt="Crepe and Coffee" class="w-full h-full object-cover" data-alt="Close-up of a delicate artisanal crepe topped with berries and powdered sugar next to a steaming latte with latte art on a marble table" src="assets/images/inside/inside4.jpg"/>
 <div class="absolute inset-0 bg-black/30"></div>
 </div>
-<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
 <div class="max-w-2xl text-white">
-<h1 class="font-display-lg text-display-lg mb-6 leading-tight">Artisanal Crepes &amp; Hand-Poured Coffee</h1>
-<p class="font-body-lg text-body-lg mb-8 opacity-90">Experience the delicate balance of French tradition and contemporary craftsmanship in every bite and every sip.</p>
-<div class="flex gap-4">
+<h1 class="hero-title font-display-lg mb-6 leading-tight">Artisanal Crepes &amp; Hand-Poured Coffee</h1>
+<p class="hero-copy font-body-lg mb-8 opacity-90">Experience the delicate balance of French tradition and contemporary craftsmanship in every bite and every sip.</p>
+<div class="flex flex-col gap-4 sm:flex-row">
 <a href="menu.html" class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md shadow-lg border-b-2 border-[#5c0008] active:translate-y-0.5 transition-all text-center inline-block">Explore the Menu</a>
 <a href="about.html" class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-lg font-label-md hover:bg-white/20 transition-all text-center inline-block">Our Story</a>
 </div>
@@ -123,8 +124,8 @@
 </div>
 </section>
 <!-- Introduction Section -->
-<section class="py-xl max-w-7xl mx-auto px-8">
-<div class="grid md:grid-cols-2 gap-16 items-center">
+<section class="py-16 md:py-xl max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
 <div class="space-y-6">
 <span class="font-label-md text-primary uppercase tracking-widest">Slow Living</span>
 <h2 class="font-headline-lg text-headline-lg text-on-surface">A Boutique Coffee Experience</h2>
@@ -150,9 +151,9 @@
 </div>
 </section>
 <!-- Highlighted Specials (Bento Style) -->
-<section class="bg-surface-container-low py-xl">
-<div class="max-w-7xl mx-auto px-8">
-<div class="flex justify-between items-end mb-12">
+<section class="bg-surface-container-low py-16 md:py-xl">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col gap-4 md:flex-row justify-between md:items-end mb-12">
 <div class="max-w-md">
 <h2 class="font-headline-lg text-headline-lg mb-4">Chef's Seasonal Selection</h2>
 <p class="font-body-md text-on-surface-variant">Our favorites this month, featuring locally sourced seasonal ingredients.</p>
@@ -161,9 +162,9 @@
             View Full Menu <span class="material-symbols-outlined ml-1">arrow_forward</span>
 </a>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
 <!-- Card 1 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-stone-200 group">
+<div class="card-hover bg-surface-container-lowest rounded-xl overflow-hidden border border-stone-200 group">
 <div class="aspect-video overflow-hidden">
 <img alt="Sweet Crepe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sweet crepe with macerated strawberries, fresh cream, and a dusting of lavender-infused sugar" src="assets/images/food/food.jpg"/>
 </div>
@@ -179,7 +180,7 @@
 </div>
 </div>
 <!-- Card 2 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-stone-200 group">
+<div class="card-hover bg-surface-container-lowest rounded-xl overflow-hidden border border-stone-200 group">
 <div class="aspect-video overflow-hidden">
 <img alt="Specialty Coffee" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A perfectly poured flat white in a ceramic cup with intricate rosetta latte art on a rustic wooden table" src="assets/images/drink/drink3.jpg"/>
 </div>
@@ -195,7 +196,7 @@
 </div>
 </div>
 <!-- Card 3 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-stone-200 group">
+<div class="card-hover bg-surface-container-lowest rounded-xl overflow-hidden border border-stone-200 group">
 <div class="aspect-video overflow-hidden">
 <img alt="Savory Crepe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Savory buckwheat crepe filled with smoked ham, gruyere cheese, and a sunny-side-up egg" src="assets/images/food/food11.jpg"/>
 </div>
@@ -204,7 +205,7 @@
 <h3 class="font-headline-md text-headline-md">Le Breton Classic</h3>
 <span class="font-headline-md text-primary">$16</span>
 </div>
-<p class="font-body-md text-on-surface-variant mb-4">Buckwheat galette, organic ham, aged Gruyère, and a farm-fresh egg.</p>
+<p class="font-body-md text-on-surface-variant mb-4">Buckwheat galette, organic ham, aged Gruyere, and a farm-fresh egg.</p>
 <div class="flex gap-2">
 <span class="bg-[#fde9ff] text-[#721199] px-3 py-1 rounded-full text-label-sm">Gluten-Free</span>
 </div>
@@ -214,9 +215,9 @@
 </div>
 </section>
 <!-- Reviews Section -->
-<section class="py-xl bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-8">
-<div class="flex items-end justify-between gap-gutter mb-8">
+<section class="py-16 md:py-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col gap-4 md:flex-row items-start md:items-end justify-between gap-gutter mb-8">
 <div>
 <span class="font-label-md text-primary uppercase tracking-widest">Guest Voices</span>
 <h2 class="font-headline-lg text-headline-lg text-on-surface mt-2">What People Say</h2>
@@ -227,13 +228,13 @@
 </div>
 </section>
 <!-- Testimonial/Mood Section -->
-<section class="py-xl">
-<div class="max-w-4xl mx-auto px-8 text-center">
+<section class="py-16 md:py-xl">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 <span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">format_quote</span>
 <blockquote class="font-headline-lg text-3xl md:text-4xl text-on-surface italic leading-snug mb-8">
-          "The most authentic crepe experience I've had outside of Brittany. The coffee is equally exceptional—a true neighborhood gem for the discerning palate."
+          "The most authentic crepe experience I've had outside of Brittany. The coffee is equally exceptional-a true neighborhood gem for the discerning palate."
         </blockquote>
-<div class="font-label-md text-on-surface-variant uppercase tracking-widest">— Julianna V., Local Food Critic</div>
+<div class="font-label-md text-on-surface-variant uppercase tracking-widest">- Julianna V., Local Food Critic</div>
 </div>
 </section>
 </main>
@@ -242,3 +243,4 @@
 <script src="components/components-loader.js"></script>
 <script src="assets/js/contact-reviews.js"></script>
 </body></html>
+
