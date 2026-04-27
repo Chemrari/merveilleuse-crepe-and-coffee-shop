@@ -73,7 +73,7 @@
     if (!header) return;
 
     var page = window.location.pathname.split("/").pop().toLowerCase();
-    var isAccueil = page === "accueil.html" || page === "";
+    var isAccueil = page === "index.html" || page === "";
 
     if (isAccueil) {
       // Initial state
@@ -95,7 +95,7 @@
   function getCurrentNavKey() {
     var page = window.location.pathname.split("/").pop().toLowerCase();
 
-    if (page === "accueil.html" || page === "") {
+    if (page === "index.html" || page === "") {
       return "accueil";
     }
 
