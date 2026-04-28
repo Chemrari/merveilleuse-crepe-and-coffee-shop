@@ -14,6 +14,26 @@ img {
   display: block;
 }
 
+.site-footer__inner {
+  display: grid;
+  gap: 0;
+}
+
+.site-footer__brand,
+.site-footer__section {
+  width: 100%;
+  min-width: 0;
+}
+
+.site-footer__copy {
+  width: min(100%, 24rem);
+  text-wrap: pretty;
+}
+
+.site-footer a {
+  word-break: normal;
+}
+
 a,
 button,
 input,
@@ -368,6 +388,10 @@ textarea:focus-visible {
   line-height: 1.35;
 }
 
+.menu-item-description {
+  line-height: 1.45;
+}
+
 .filter-chip {
   border: 1px solid transparent;
 }
@@ -381,7 +405,48 @@ textarea:focus-visible {
   display: none;
 }
 
+.review-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -8px rgba(28, 16, 10, 0.12);
+}
+
 @media (max-width: 767px) {
+  .site-footer__inner {
+    gap: 0;
+  }
+
+  .site-footer__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-footer__copy {
+    width: min(100%, 26rem);
+  }
+
+  .home-hero-section {
+    min-height: 100svh;
+    align-items: flex-end;
+    background: #1f1713;
+  }
+
+  .home-hero-image {
+    object-fit: contain;
+    object-position: center top;
+    padding-top: 5rem;
+  }
+
+  .home-hero-content {
+    padding-bottom: 2rem;
+  }
+
+  .home-hero-content .max-w-2xl {
+    max-width: 100%;
+    padding: 1.15rem 1rem 0;
+    background: linear-gradient(180deg, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 0.5) 28%, rgba(8, 8, 8, 0.78) 100%);
+  }
+
   .page-main {
     padding-top: 6rem;
     padding-bottom: 3.5rem;
@@ -514,6 +579,27 @@ textarea:focus-visible {
     padding: 0.2rem 0.55rem;
     font-size: 0.9rem;
     line-height: 1.4;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-footer__inner {
+    grid-template-columns: minmax(0, 1.3fr) minmax(14rem, 1fr) minmax(14rem, 1fr);
+    gap: 2rem;
+  }
+
+  .site-footer__brand {
+    align-self: start;
+  }
+
+  .site-footer__copy {
+    width: min(100%, 21rem);
+  }
+
+  .home-hero-image {
+    object-fit: cover;
+    object-position: center center;
+    padding-top: 0;
   }
 }
 
