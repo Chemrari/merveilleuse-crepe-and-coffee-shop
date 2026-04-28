@@ -2,36 +2,7 @@
   var STORAGE_KEY = "merveilleuse_reviews_v1";
   var MAX_REVIEWS = 50;
   var HOME_LIMIT = 3;
-  var DEFAULT_REVIEWS = [
-    {
-      id: 1,
-      name: "Sarah M.",
-      rating: 5,
-      message: "Beautiful presentation, rich coffee, and one of the best crepes we've had in Destin.",
-      createdAt: "2026-04-12T10:00:00.000Z"
-    },
-    {
-      id: 2,
-      name: "Daniel R.",
-      rating: 5,
-      message: "The Pistache Royale is exceptional and the cafe feels calm, elegant, and welcoming.",
-      createdAt: "2026-04-08T10:00:00.000Z"
-    },
-    {
-      id: 3,
-      name: "Nadia K.",
-      rating: 5,
-      message: "Perfect spot for dessert and conversation. The staff was lovely and the waffles were fresh and crisp.",
-      createdAt: "2026-04-04T10:00:00.000Z"
-    },
-    {
-      id: 4,
-      name: "Marcus T.",
-      rating: 4,
-      message: "Great cappuccino, generous portions, and a premium feel without being too formal.",
-      createdAt: "2026-03-30T10:00:00.000Z"
-    }
-  ];
+
 
   document.addEventListener("DOMContentLoaded", function () {
     var form = document.getElementById("review-form");
