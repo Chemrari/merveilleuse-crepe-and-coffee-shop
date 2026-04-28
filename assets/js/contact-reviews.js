@@ -3,7 +3,6 @@
   var MAX_REVIEWS = 50;
   var HOME_LIMIT = 3;
 
-
   document.addEventListener("DOMContentLoaded", function () {
     var form = document.getElementById("review-form");
     var list = document.getElementById("review-list");
@@ -21,6 +20,15 @@
     if (!form || !list || !status) {
       return;
     }
+
+    var params = new URLSearchParams(window.location.search);
+    var nameInput = document.getElementById("review-name");
+    var ratingInput = document.getElementById("review-rating");
+    var messageInput = document.getElementById("review-message");
+    
+    if (params.has("name")) nameInput.value = params.get("name");
+    if (params.has("rating")) ratingInput.value = params.get("rating");
+    if (params.has("message")) messageInput.value = params.get("message");
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
